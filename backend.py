@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Настройка Gemini AI
-genai.configure(api_key="AIzaSyAPqtz78EEsO3jS5PwzD7zrMKdDXePZsyI")
+genai.configure(api_key="AIzaSyA1Q-fqaV4xxym85Hazq6G25-GwMVVU0Tk")
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 def clean_text(text):
@@ -63,4 +63,5 @@ def serve_react(path):
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
+
 
